@@ -1,4 +1,5 @@
-Summary:	A digital camera image meta-data (Exif) parser.
+Summary:	A digital camera image meta-data (Exif) parser
+Summary(pl):	Analizator metadanych (Exif) obrazów z aparatów cyfrowych
 Name:		exiftags
 Version:	0.96
 Release:	1
@@ -20,11 +21,24 @@ UserComment Exif tag that some cameras include in the image metadata
 they create. This program is useful for recording caption or location
 information in the image file itself.
 
+%description -l pl
+exiftags analizuje plik JPEG poszukuj±c danych Exif (Exchangeable
+Image File), formatuj±c i wypisuj±c w³asno¶ci obrazu. Aparaty cyfrowe
+zwykle dodaj± do produkowanych przez siebie plików graficznych dane
+Exif, zawieraj±ce informacje o aparacie i obrazie cyfrowym. exiftags
+obs³uguje niektóre w³asno¶ci specyficzne dla poszczególnych
+producentów aparatów.
+
+Do³±czone narzêdzie towarzysz±ce, exifcom, wy¶wietla i zapisuje
+znacznik Exif UserComment, do³±czany przez niektóre aparaty. Ten
+program jest przydatny do zapisywania podpisów lub informacji o miejsu
+w samym obrazku.
+
 %prep
 %setup -q
 
 %build
-%{__make} RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
+%{__make} RPM_OPT_FLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -40,6 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README CHANGES
-
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man?/*
