@@ -32,8 +32,8 @@ producentów aparatów.
 
 Do³±czone narzêdzie towarzysz±ce, exifcom, wy¶wietla i zapisuje
 znacznik Exif UserComment, do³±czany przez niektóre aparaty. Ten
-program jest przydatny do zapisywania podpisów lub informacji o miejsu
-w samym obrazku.
+program jest przydatny do zapisywania podpisów lub informacji 
+o miejscu w samym obrazku.
 
 %prep
 %setup -q
