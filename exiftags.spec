@@ -2,7 +2,7 @@ Summary:	A digital camera image meta-data (Exif) parser
 Summary(pl):	Analizator metadanych (Exif) obrazów z aparatów cyfrowych
 Name:		exiftags
 Version:	0.98
-Release:	1
+Release:	2
 License:	BSD
 Group:		Applications/Multimedia
 Source0:	http://johnst.org/sw/exiftags/%{name}-%{version}.tar.gz
