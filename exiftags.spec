@@ -6,6 +6,7 @@ Release:	1
 License:	BSD
 Group:		Applications/Multimedia
 Source0:	http://johnst.org/sw/exiftags/%{name}-%{version}.tar.gz
+# Source0-md5:	5cfb638257a8d6614c8cdd21636b8cf1
 URL:		http://johnst.org/sw/exiftags/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
