@@ -1,12 +1,12 @@
 Summary:	A digital camera image meta-data (Exif) parser
 Summary(pl):	Analizator metadanych (Exif) obrazów z aparatów cyfrowych
 Name:		exiftags
-Version:	0.99
+Version:	0.99.1
 Release:	1
 License:	BSD
 Group:		Applications/Multimedia
 Source0:	http://johnst.org/sw/exiftags/%{name}-%{version}.tar.gz
-# Source0-md5:	eb636d848c416f8d21f901b26aed3936
+# Source0-md5:	033b85bc0502acf794fba4785483a901
 URL:		http://johnst.org/sw/exiftags/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -46,8 +46,10 @@ rm -rf $RPM_BUILD_ROOT
 
 install -D exiftags $RPM_BUILD_ROOT%{_bindir}/exiftags
 install -D exifcom $RPM_BUILD_ROOT%{_bindir}/exifcom
+install -D exiftime $RPM_BUILD_ROOT%{_bindir}/exiftime
 install -D exiftags.1 $RPM_BUILD_ROOT%{_mandir}/man1/exiftags.1
 install -D exifcom.1 $RPM_BUILD_ROOT%{_mandir}/man1/exifcom.1
+install -D exiftime.1 $RPM_BUILD_ROOT%{_mandir}/man1/exiftime.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
