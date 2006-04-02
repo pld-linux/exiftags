@@ -39,7 +39,9 @@ o miejscu w samym obrazku.
 %setup -q
 
 %build
-%{__make} RPM_OPT_FLAGS="%{rpmcflags}"
+%{__make} \
+	RPM_OPT_FLAGS="%{rpmcflags}" \
+	CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
