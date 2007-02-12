@@ -1,5 +1,5 @@
 Summary:	A digital camera image meta-data (Exif) parser
-Summary(pl.UTF-8):   Analizator metadanych (Exif) obrazów z aparatów cyfrowych
+Summary(pl.UTF-8):	Analizator metadanych (Exif) obrazów z aparatów cyfrowych
 Name:		exiftags
 Version:	1.00
 Release:	1
