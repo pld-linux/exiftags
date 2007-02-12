@@ -1,5 +1,5 @@
 Summary:	A digital camera image meta-data (Exif) parser
-Summary(pl):	Analizator metadanych (Exif) obrazów z aparatów cyfrowych
+Summary(pl.UTF-8):   Analizator metadanych (Exif) obrazÃ³w z aparatÃ³w cyfrowych
 Name:		exiftags
 Version:	1.00
 Release:	1
@@ -22,17 +22,17 @@ UserComment Exif tag that some cameras include in the image metadata
 they create. This program is useful for recording caption or location
 information in the image file itself.
 
-%description -l pl
-exiftags analizuje plik JPEG poszukuj±c danych Exif (Exchangeable
-Image File), formatuj±c i wypisuj±c w³asno¶ci obrazu. Aparaty cyfrowe
-zwykle dodaj± do produkowanych przez siebie plików graficznych dane
-Exif, zawieraj±ce informacje o aparacie i obrazie cyfrowym. exiftags
-obs³uguje niektóre w³asno¶ci specyficzne dla poszczególnych
-producentów aparatów.
+%description -l pl.UTF-8
+exiftags analizuje plik JPEG poszukujÄ…c danych Exif (Exchangeable
+Image File), formatujÄ…c i wypisujÄ…c wÅ‚asnoÅ›ci obrazu. Aparaty cyfrowe
+zwykle dodajÄ… do produkowanych przez siebie plikÃ³w graficznych dane
+Exif, zawierajÄ…ce informacje o aparacie i obrazie cyfrowym. exiftags
+obsÅ‚uguje niektÃ³re wÅ‚asnoÅ›ci specyficzne dla poszczegÃ³lnych
+producentÃ³w aparatÃ³w.
 
-Do³±czone narzêdzie towarzysz±ce, exifcom, wy¶wietla i zapisuje
-znacznik Exif UserComment, do³±czany przez niektóre aparaty. Ten
-program jest przydatny do zapisywania podpisów lub informacji 
+DoÅ‚Ä…czone narzÄ™dzie towarzyszÄ…ce, exifcom, wyÅ›wietla i zapisuje
+znacznik Exif UserComment, doÅ‚Ä…czany przez niektÃ³re aparaty. Ten
+program jest przydatny do zapisywania podpisÃ³w lub informacji 
 o miejscu w samym obrazku.
 
 %prep
