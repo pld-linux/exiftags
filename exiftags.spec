@@ -7,6 +7,7 @@ License:	BSD
 Group:		Applications/Multimedia
 Source0:	http://johnst.org/sw/exiftags/%{name}-%{version}.tar.gz
 # Source0-md5:	9d5bce968fdde2dc24ba49c0024dc0cc
+Patch0:		%{name}-Makefile.patch
 URL:		http://johnst.org/sw/exiftags/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,11 +38,13 @@ o miejscu w samym obrazku.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} \
-	RPM_OPT_FLAGS="%{rpmcflags}" \
-	CC="%{__cc}"
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}" \
+	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
