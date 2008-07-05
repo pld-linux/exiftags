@@ -1,0 +1,28 @@
+diff -urN exiftags-1.01/Makefile exiftags-1.01.new/Makefile
+--- exiftags-1.01/Makefile	2005-01-05 01:30:32.000000000 +0100
++++ exiftags-1.01.new/Makefile	2008-07-05 20:25:40.000000000 +0200
+@@ -17,6 +17,7 @@
+ CC=cc
+ DEBUG=
+ CFLAGS=$(DEBUG)
++LDFLAGS=
+ DESTDIR=
+ 
+ prefix=/usr/local
+@@ -36,13 +37,13 @@
+ all: exiftags exifcom exiftime
+ 
+ exiftags: exiftags.o $(OBJS) $(MKRS) $(HDRS)
+-	$(CC) $(CFLAGS) -o $@ exiftags.o $(OBJS) $(MKRS) -lm
++	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ exiftags.o $(OBJS) $(MKRS) -lm
+ 
+ exifcom: exifcom.o $(OBJS) $(NOMKRS) $(HDRS)
+-	$(CC) $(CFLAGS) -o $@ exifcom.o $(OBJS) $(NOMKRS) -lm
++	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ exifcom.o $(OBJS) $(NOMKRS) -lm
+ 
+ exiftime: exiftime.o timevary.o $(OBJS) $(NOMKRS) $(HDRS)
+-	$(CC) $(CFLAGS) -o $@ exiftime.o timevary.o $(OBJS) $(NOMKRS) -lm
++	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ exiftime.o timevary.o $(OBJS) $(NOMKRS) -lm
+ 
+ clean:
+ 	@rm -f $(OBJS) $(MKRS) $(NOMKRS) exiftags.o exifcom.o exiftime.o \
